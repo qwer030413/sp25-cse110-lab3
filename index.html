@@ -2,10 +2,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>meeting</title>
   </head>
   <body>
-    <meta charset="UTF-8">
     <link rel="icon" href="favicon.ico" />
     <header>
         <h1>Meeting Notes</h1>
@@ -63,8 +63,9 @@
         <li>We should also consider the font size.</li>
         <li>Don't forget about the padding and margin.</li>
         <li>why is centering divs so hard</li>
-        <p>This line should break after this <br> Did it break?</p>
+        <h4>This line should break after this <br> Did it break?</h4>
     </ol>
+    <p>This is a paragraph</p>
     </section>
     <div>This is a div</div>
     <span>this is a span</span>
@@ -75,45 +76,50 @@
     <section>
         <h3>Audios and Videos:</h3>
         <audio controls>
-        <source src="./The 30-Second Video.mp3" type="audio/mpeg">
+        <source src="./audio.mp3" type="audio/mpeg">
         </audio>
         <video controls>
-            <source src="./The 30-Second Video.mp4" type="video/mp4">
+            <source src="./video" type="video/mp4">
         </video>
     </section>
     <section>
         <details>
+            <summary>
+                Summary: we need to center our divs!
+            </summary>
             <h4>It has been awhile since I did HTML!</h4>
         </details>
-        <summary>
-        Summary: we need to center our divs!
-        </summary>
     </section>
 
     <form>
         <fieldset>
             <h3>Have questions?</h3>
-            <label>Name:</label>
+            <label for="name">Name:</label>
             <input type="text" id="name" name="name"><br><br>
-            <label>Descriptionasd:</label><br>
+
+            <label for="bio">Description:</label><br>
             <textarea id="bio" name="bio" rows="4" cols="40"></textarea><br><br>
-            <label for="category">department:</label>
-            <input list="category">
-            <datalist  id="category">
-                <option value="Software">
-                <option value="Design">
-                <option value="sales">
-                <option value="CEO">
+
+            <label for="category-input">Department:</label>
+            <input id="category-input" list="category" name="department">
+            <datalist id="category">
+            <option value="Software">
+            <option value="Design">
+            <option value="Sales">
+            <option value="CEO">
             </datalist><br><br>
+
             <label for="country">Country:</label>
             <select id="country" name="country">
-                <option value="us">United States</option>
-                <option value="ca">Canada</option>
-                <option value="uk">United Kingdom</option>
+            <option value="us">United States</option>
+            <option value="ca">Canada</option>
+            <option value="uk">United Kingdom</option>
             </select><br><br>
+
             <button type="submit">Submit</button>
         </fieldset>
     </form>
+    </main>
     <footer>
         <h1>Done!</h1>
     </footer>
