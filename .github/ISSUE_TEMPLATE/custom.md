@@ -7,4 +7,10 @@ assignees: ''
 
 ---
 
+## Summary
 
+Describe the feature you would like to add.
+
+## Rationale
+
+Why is this feature important?
