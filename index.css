@@ -1,5 +1,5 @@
 :root {
-    --main-color: hsl(9, 71%, 88%);
+    --main-color: hsl(8, 100%, 85%);
     --text-size: 1.2rem;
     --fallback-color: blue;
   }
@@ -7,7 +7,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--main-color,  --fallback-color);
     margin: 1rem;
-    padding: 10px;
+    padding:  10px 10px 10px 10px;
 
 }
 h1 { 
@@ -20,31 +20,104 @@ h2 {
     text-align: center;
     text-decoration: underline;
 }
+.title{
+    position:absolute;
 
+}
 main {
+    display: none;
     border-style: solid;
     border-width: 2px;
     border-color: #444;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
     gap: 2rem;
+    margin:auto;
 }
 .inline-box {
     display: inline-block;
-    width: 100px;
     height: 100px;
-    background-color: orange;
-    margin: 10px;
+    background-color: color(display-p3 1 10 0);
+    width: 40%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 25px;
+    padding-right: 20px;
+    padding-bottom: 25;
+    padding-left: 20px;
+    border: 2px solid blue;
+
 }
 
 .inline {
     display: inline;
-    width: 100px;
     height: 100px;
     background-color: red;
-    margin: 10px;
+    margin:  10px 10px 10px 10px;
+    width: 40%;
+    padding-top: 25px;
+    padding-right: 20px;
+    padding-bottom: 25;
+    padding-left: 20px;
+    position:relative;
     
+}
+.block{
+    display: block;
+    position:sticky;
+}
+
+header { 
+    position:fixed;
+    background-color: aquamarine;
+    width: 100%;
+}
+
+header :hover{
+    font-size: 1.5rem;
+}
+
+.form:active{
+    background-color: red;
+    transform: scale(0.95);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 20px; 
+  justify-items: center; 
+  margin: 20px 0;
+}
+
+.grid-item {
+  background-color: #ffeedd;
+  padding: 20px; 
+  border: 2px dashed #888;
+  text-align: center;
+}
+.flex-child {
+  flex: 1 1 30%; /* flex shorthand for grow, shrink, basis */
+  background-color: #e0f7fa;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inline-box,
+  .inline,
+  .flex-child {
+    width: 80%;
+  }
 }
