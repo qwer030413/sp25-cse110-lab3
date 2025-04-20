@@ -18,7 +18,7 @@ body {
 }
 h1 { 
     color: rgb(90, 90, 90);
-    background-color: color-mix(in lch longer hue, hsl(199, 49%, 12%), rgb(255, 255, 255));
+    background-color: color-mix(in lch, hsl(199 49% 12%), rgb(255, 255, 255));
     width: 50%;
 }
 input[type="text"] {
@@ -50,7 +50,7 @@ main {
 .inline-box {
     display: inline-block;
     height: 100px;
-    background-color: color(display-p3 9 0.5 0);
+    background-color: color(display-p3 9 100% 50%);
     width: 40%;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -150,7 +150,7 @@ h2 + h3 {
 div.inline-box {
   display: inline-block;
   height: 100px;
-  background-color: color(display-p3 1 10 0);
+  background-color: color(display-p3 1 0.5 0);
   width: 40%;
   margin: 10px;
   padding: 25px 20px;
@@ -161,12 +161,6 @@ form:has(input:focus) {
   border: 3px solid purple;
 }
 
-main {
-  section {
-    ol {
-      li {
-        color: darkblue;
-      }
-    }
-  }
+main section ol li {
+    color: darkblue;
 }
