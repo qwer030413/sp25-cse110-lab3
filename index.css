@@ -80,6 +80,7 @@ main {
 .block{
     display: block;
     position:sticky;
+    background-color: color(display-p3 1 0 0);
 }
 
 header { 
@@ -108,7 +109,7 @@ header :hover{
 .grid-item {
   background-color: #ffeedd;
   padding: 20px; 
-  border: 2px dashed color(display-p3 1 0 0);
+  border: 2px dashed #888;
   text-align: center;
 }
 .flex-child {
