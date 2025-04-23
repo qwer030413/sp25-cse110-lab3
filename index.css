@@ -17,7 +17,7 @@ body {
     font-size: 14px;
 }
 h1 { 
-    color: color-mix(in srgb, red 10%, blue 50%);
+    color: color-mix(in oklab, #a71e14 0%, white);
     background-color: blanchedalmond;
     width: 50%;
 }
