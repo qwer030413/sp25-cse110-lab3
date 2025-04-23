@@ -80,7 +80,6 @@ main {
 .block{
     display: block;
     position:sticky;
-    background-color: color(display-p3 1 0 0);
 }
 
 header { 
