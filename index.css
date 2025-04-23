@@ -18,7 +18,7 @@ body {
 }
 h1 { 
     color: rgb(90, 90, 90);
-    background-color: color(display-p3 1 0 0 / 1);
+    background-color: blanchedalmond;
     width: 50%;
 }
 input[type="text"] {
@@ -108,7 +108,7 @@ header :hover{
 .grid-item {
   background-color: #ffeedd;
   padding: 20px; 
-  border: 2px dashed #888;
+  border: 2px dashed color(display-p3 1 0 0);
   text-align: center;
 }
 .flex-child {
